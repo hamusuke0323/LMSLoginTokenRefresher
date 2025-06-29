@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "LMS LoginToken Refresher",
+  "version": "1.0",
+  "description": "A chrome extension to refresh an old login token into new one on LMS automatically.",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["https://elms.u-aizu.ac.jp/login/index.php"],
+  "content_scripts": [
+    {
+      "matches": ["https://elms.u-aizu.ac.jp/login/index.php"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
