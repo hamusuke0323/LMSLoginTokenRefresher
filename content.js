@@ -33,7 +33,6 @@ window.addEventListener('load', () => {
     } finally {
       console.log("ログインします...");
       form.submit();
-      loginButton.disabled = false;
     }
   });
 });
